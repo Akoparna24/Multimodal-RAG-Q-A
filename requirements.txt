@@ -4,7 +4,6 @@ pdfplumber
 
 # AI APIs
 groq
-google-generativeai
 
 # Embeddings and vector store
 sentence-transformers
