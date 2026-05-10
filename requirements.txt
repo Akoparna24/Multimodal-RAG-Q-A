@@ -1,0 +1,19 @@
+# Document parsing
+pymupdf
+pdfplumber
+
+# AI APIs
+groq
+google-generativeai
+
+# Embeddings and vector store
+sentence-transformers
+chromadb
+
+# UI
+gradio
+
+# Utilities
+python-dotenv
+rich
+pillow
