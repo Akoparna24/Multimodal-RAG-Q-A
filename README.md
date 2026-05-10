@@ -165,7 +165,7 @@ multimodal_rag/
 
 ---
 
-## 🎯 Resume Talking Points
+## 🎯 Technical Highlights
 
 - Built an end-to-end **multimodal RAG pipeline** handling text, tables, and visual content
 - Integrated **vision-language models** (Groq Vision/Llama 4 Scout) to make images semantically searchable
