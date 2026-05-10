@@ -1,3 +1,14 @@
+---
+title: Multimodal RAG QA
+emoji: 🔍
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+
 # 🔍 Multimodal RAG — Visual Document Q&A
 
 A production-ready RAG (Retrieval Augmented Generation) system that goes beyond plain text — it understands **tables, charts, diagrams, and images** inside PDF documents.
