@@ -10,7 +10,7 @@ console = Console()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-VISION_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+VISION_MODEL = os.getenv("VISION_MODEL", "qwen/qwen3.8-27b")
 
 PROMPT = """Describe this image in detail for a search index. Include:
 - What type of visual it is (chart, table, diagram, photo etc.)

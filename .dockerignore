@@ -1,0 +1,16 @@
+# Never copy secrets into an image
+.env
+
+# Your local Python environment (large, and built for macOS, not Linux)
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Not needed to run the app
+.git/
+.idea/
+
+# Local data: indexed PDFs and ChromaDB files.
+# Data is kept in a volume instead (the next step).
+data/

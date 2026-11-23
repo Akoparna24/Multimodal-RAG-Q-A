@@ -9,7 +9,7 @@ console = Console()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-TEXT_MODEL = "llama-3.1-8b-instant"
+TEXT_MODEL = os.getenv("TEXT_MODEL", "openai/gpt-oss-20b")
 
 SYSTEM_PROMPT = """You are an intelligent document assistant.
 You answer questions based only on the provided context.
@@ -51,7 +51,8 @@ def answer_question(question: str, chunks: list[dict]) -> str:
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user",   "content": prompt}
         ],
-        max_tokens=1000
+        max_tokens=1000,
+        reasoning_effort="low",
     )
 
     return response.choices[0].message.content.strip()
